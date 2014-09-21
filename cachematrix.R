@@ -1,7 +1,10 @@
-## Put comments here that give an overall description of what your
-## functions do
+## makeCacheMatrix: As a constructor, recieves a matrix to initialize, returns a list that contains four functions,
+##		    which are getter and setter for the original matrix, and for its inverse matrix.
 
-## Write a short comment describing this function
+## cacheSolve:      A matrix inverse solver for our data type defined in function "makeCacheMatrix",
+##                  receives a cache matrix as parameter, if the inverse has been already calculated,
+##                  returns the calculated value, otherwise calculate it by the built-in function "solve()"
+
 
 makeCacheMatrix <- function(x = matrix()) {
   m <- NULL
@@ -17,8 +20,6 @@ makeCacheMatrix <- function(x = matrix()) {
        getinv = getinv)
 }
 
-
-## Write a short comment describing this function
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
